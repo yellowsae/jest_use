@@ -1,8 +1,9 @@
-import Vue from "vue";
+//引入createApp
+import { createApp } from "vue";
+//引入需要添加的组件
 import App from "./App.vue";
+//添加组件
 
-Vue.config.productionTip = false;
+//如果在main.js中
 
-new Vue({
-  render: (h) => h(App),
-}).$mount("#app");
+createApp(App).mount("#app");
